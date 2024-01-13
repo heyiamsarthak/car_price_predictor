@@ -7,8 +7,8 @@ import pandas as pd
 
 app=Flask(__name__)
 
-model = pickle.load(open("LinearRegressionModel.pkl",'rb'))
-car=pd.read_csv('Cleaned Car.csv')
+model = pickle.load(open("./model/LinearRegressionModel.pkl",'rb'))
+car=pd.read_csv('./model/Cleaned Car.csv')
 
 
 @app.route('/')
